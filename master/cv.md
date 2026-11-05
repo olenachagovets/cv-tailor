@@ -8,6 +8,7 @@ Lead QA | Senior Quality Assurance Engineer
 chagovets.xx@gmail.com
 linkedin.com/in/olena-machula
 Remote | Open to EU / UK opportunities 
+
 QA Lead with 7+ years of software quality assurance experience and 3 years leading a team of 5 QA Engineers. Experienced in test strategy, shift-left quality, risk-based and exploratory testing, complex end-to-end validation, release quality, and test automation. 2 years of hands-on experience with Playwright and JavaScript for web UI and end-to-end test automation. Defined automation priorities, identified requirement gaps and quality risks before development, and acted as the QA escalation point for Product and Engineering teams.
 ## Skills
 QA Leadership & Strategy: QA Leadership, QA Strategy, Test Strategy, Quality Management, Test Planning, Risk-Based Testing, Quality Risk Assessment, Quality Governance, Test Process Improvement, Shift-Left Testing   
@@ -26,6 +27,7 @@ April 2023 – July 2026 | Remote
 * Protected business-critical workflows across payment integrations, REST APIs, asynchronous processes, and webhooks through exploratory, integration, regression, API, and complex end-to-end testing
 * Increased automated regression protection for business-critical functionality by defining automation priorities and guiding the QA automation engineer toward high-risk and high-value scenarios
 * Improved QA workflows across requirement analysis, test case design, and bug reporting by introducing AI-assisted processes using ChatGPT and Claude, while acting as the QA escalation point for quality risks and release blockers
+
 Quality Assurance Engineer | MobiDev
 September 2021 – March 2023 | Kharkiv, Ukraine
 * Improved early defect detection by applying shift-left testing during requirements analysis, identifying missing scenarios, inconsistencies, and unclear business rules before development
@@ -33,6 +35,7 @@ September 2021 – March 2023 | Kharkiv, Ukraine
 * Strengthened integration coverage by validating positive, negative, duplicate, delayed, and incomplete-data scenarios across APIs, backend services, and receiving-system workflows
 * Improved product quality across web, Android, and iOS applications by executing functional, regression, integration, API, and exploratory testing under different device, UI, and network conditions
 * Reduced investigation time for critical defects by analysing API behaviour, browser DevTools, backend integrations, and production issues, and collaborating with developers to identify root causes and verify fixes
+
 Quality Assurance Engineer | NearShorePartner.ch
 February 2019 – August 2021 | Kharkiv, Ukraine
 * Improved product quality across web and mobile applications by executing functional, non-functional, regression, and integration testing throughout the development lifecycle
