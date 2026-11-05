@@ -1,7 +1,8 @@
 # CV Formatting Style Guide
 
 Source: [Olena_Machula_CV_master](https://docs.google.com/document/d/130PuP8feSfTM03H6zOb8s6N2o5O8MyFvSJ9rkOkpzvg/edit)  
-Extracted: 5 November 2026  
+Updated: 5 November 2026  
+Authoritative formatting source for this revision: attached `Olena_Machula_CV_master-4.docx`; this supersedes the earlier Google Docs extraction.  
 Scope: formatting specification, not a résumé content export.
 
 ## How to use this guide
@@ -13,18 +14,18 @@ Reproduce the explicitly applied formatting below when creating a Google Docs or
 | Setting | Source value |
 | --- | --- |
 | Mode | Pages |
-| Paper | A4 portrait: 595.2755905511812 × 841.8897637795277 pt (210 × 297 mm) |
-| Document default margins | 72 pt on all sides |
-| Section margins overriding document defaults | Top 30.95 pt; left and right 37.45 pt |
+| Paper | A4 portrait; DOCX stores 11900 × 16840 twips = 595 × 842 pt, approximately 209.90 × 297.04 mm |
+| Top and bottom margins, all three sections | **1.0 cm (10 mm)** = 28.346456692913385 pt each |
+| Left and right margins, all three sections | **1.3 cm (13 mm)** = 36.85039370078741 pt each |
 | Header and footer margins | 36 pt each |
 | Text direction | Left to right |
 | Column separator | None |
 | Section transitions | Continuous |
-| Header section | Two columns, each 230.199 pt; first-column gap 59.9775 pt; bottom margin 32.4 pt |
-| Main body section | No explicit column array returned; single-column body indicated by section reset; bottom margin 31.972440944881953 pt |
-| Education content section | Two columns, each 242.187 pt; first-column gap 36 pt; bottom margin 31.972440944881953 pt |
+| Header section | Two columns, each 230.798 pt; first-column gap 59.9775 pt; margins as above |
+| Main body section | Single column; no column element in the body section properties; margins as above |
+| Education content section | **One full-width column**, 521.574 pt stored width; no column gap; margins as above |
 
-Units: 1 pt = 1/72 inch; millimetres = pt × 25.4 / 72. Point values above are authoritative. Rounded examples: top margin 30.95 × 25.4 / 72 = 10.92 mm; side margin 37.45 × 25.4 / 72 = 13.21 mm.
+Units: 1 pt = 20 twips; 1 inch = 1440 twips = 25.4 mm. Top/bottom: 566.9291338582677 ÷ 1440 × 25.4 = 10 mm. Left/right: 737.0078740157481 ÷ 1440 × 25.4 = 13 mm. Header/footer offsets are 720 twips = 36 pt = 12.7 mm. Display converted values rounded to two decimals when needed; preserve the stored values in the appendix. Do not reuse the former 72 pt document defaults or the older section margins.
 
 ## Typography
 
@@ -52,18 +53,20 @@ Raleway's returned font-family weight is 400; bold is applied through the separa
 
 | Element | Alignment | Line spacing | Space before / after |
 | --- | --- | --- | --- |
-| Name | Start / left, inherited | 150% | 0 / 0 pt, inherited |
-| Professional title | Start / left, inherited | 150% | 0 / 0 pt |
-| Contact paragraphs | End / right | 150% | 0 / 0 pt |
-| Summary | Justified | 125% | 0 / 0 pt |
-| Section headings | Start / left, inherited | 115% | 8 / 8 pt |
-| Skill category paragraphs | Justified | 115% | 6 / 6 pt |
-| First job heading | Start / left, inherited | 150% | 4 / 2 pt |
-| Later job headings | Start / left, inherited | 150% | 7 / 2 pt |
-| Experience bullets | Justified | 150% | 0 / 0 pt, inherited |
-| Education details | Start / left, inherited | 115% | 0 / 12 pt |
+| Name | Start / left, inherited | **1.5 (150%)** | 0 / 0 pt, inherited |
+| Professional title | Start / left, inherited | **1.5 (150%)** | 0 / 0 pt |
+| Contact paragraphs | End / right | **1.5 (150%)** | 0 / 0 pt |
+| Summary | Justified | 1.25 (125%) | 0 / 0 pt |
+| Section headings | Start / left, inherited | 1.15 (115%) | 8 / 8 pt |
+| Skill category paragraphs | Justified | 1.15 (115%) | 6 / 6 pt |
+| First job heading | Start / left, inherited | **1.5 (150%)** | 4 / 2 pt |
+| Later job headings | Start / left, inherited | **1.5 (150%)** | 7 / 2 pt |
+| Experience bullets | Justified | **1.5 (150%)** | 0 / 0 pt, inherited |
+| Education details | Start / left, inherited | 1.15 (115%) | 0 / 12 pt |
 
-Line spacing percentages are paragraph line-spacing settings, not fixed point leading. Paragraph spacing uses NEVER_COLLAPSE where set directly or inherited from the normal style.
+**Experience job headings, date/location lines and every experience bullet use 1.5 line spacing.** The standalone “Experience” section heading uses 1.15, like the other section headings. Do not apply 1.15 to the experience entries.
+
+Word encodes automatic line spacing in 240ths of a line: 360 ÷ 240 = 1.5; 300 ÷ 240 = 1.25; 276 ÷ 240 = 1.15. These are multiples, not fixed point leading. Before/after paragraph spacing is separate: for example 160 twips ÷ 20 = 8 pt. Experience bullets do not explicitly specify before/after spacing; no paragraph spacing is set by Normal or document defaults in this DOCX.
 
 ## Heading rules and dividers
 
@@ -76,19 +79,20 @@ Line spacing percentages are paragraph line-spacing settings, not fixed point le
 
 ## Header structure and indents
 
+- **Email and LinkedIn must remain plain text, with no embedded hyperlinks**, as confirmed by the user. Do not add a `mailto:` target, LinkedIn hyperlink, hyperlink styling, or automatic link conversion. Preserve the visible email address and profile URL.
 - Put name and professional title in the first header column; contact details use end/right alignment.
 - Phone and email share a paragraph separated by a soft line break.
 - LinkedIn and availability share another paragraph separated by a soft line break.
 - Name end indent: approximately 0.05 pt.
 - Professional-title end indent: −10.825 pt.
 - Contact paragraph end indent: 2.7 pt.
-- LinkedIn/availability paragraph start and first-line indents: 21.259842519685023 pt.
+- LinkedIn/availability paragraph left indent: 21.259842519685023 pt; relative first-line indent: 0 pt. Do not add another 21.26 pt to its first line.
 
 ## Experience structure and bullets
 
 - A job heading combines the role/company line and date/location line in one paragraph, separated by a soft line break.
 - Keep each job heading with the following paragraph.
-- Use a solid round bullet: ● (Unicode U+25CF), list ID kix.list.1, level 0.
+- Use a solid round bullet: ● (Unicode U+25CF), Word numbering ID 1, level 0.
 - List definition: bullet alignment START; first-line indent 21.259842519685044 pt; text start indent 0 pt.
 - Each actual bullet paragraph also explicitly sets first-line indent 21.259842519685044 pt and end indent 2.7 pt.
 - Preserve these unusual source indent values for literal reproduction; do not silently replace them with conventional hanging indents.
@@ -99,9 +103,13 @@ Line spacing percentages are paragraph line-spacing settings, not fixed point le
 
 ## Education and additional details
 
-- Education is followed by a continuous two-column section.
+- Education is followed by a continuous **single-column, full-width section**. Do not use the former two-column education layout.
 - The education content is one paragraph using soft line breaks between the university, degree lines, certification, domains and languages.
-- There are two soft line breaks before the Certification label.
+- There is **one soft line break** after the BSc line and before “Certification:”. There are **no empty lines** between the degree list and certification.
+- Education uses **1.15 line spacing**, 12 pt space after the entire paragraph, and a 2.7 pt right indent.
+- The Education heading stays in the full-width body section. The continuous section after it also has one column. University, degrees, certification, domains and languages follow vertically across the available page width; there is no side-by-side block.
+- Sequence: university → MSc → BSc → Certification → Domains → Languages, with one soft line break between consecutive entries. Line breaks within wrapped text are automatic and depend on available full-page text width.
+- University: 12 pt bold; degree lines: 12 pt regular. Certification, Domains and Languages: 11 pt, bold labels and regular values. Education heading: 16 pt regular.
 - Keep the institution bold and degree values regular.
 - Keep inline labels bold and their values regular.
 
@@ -112,3652 +120,7031 @@ These are observed details, not suggested changes:
 - Education is 16 pt while the other visible section headings are 15 pt.
 - The first letter “Q” in the NearShorePartner.ch job title is 12 pt; the remaining title text is 13 pt.
 - Two NearShorePartner.ch bullet markers are 10 pt rather than the usual 11 pt.
-- The final NearShorePartner.ch bullet has a 12 pt paragraph-ending newline, although its visible text is 11 pt.
+- The final NearShorePartner.ch bullet has an 11 pt paragraph mark in this DOCX; the older guide’s 12 pt newline value is superseded.
 - The name's paragraph-ending newline is 11 pt rather than 20 pt.
 - The Education heading ends with a bold 12 pt newline, although the visible heading is regular 16 pt.
 - The first contact paragraph has an underlined paragraph-ending newline; its visible contact text does not explicitly set underline or a hyperlink.
 - Tiny and negative end indents are preserved in the source.
-- Stored named styles include Times New Roman and Calibri defaults; visible text explicitly uses Raleway.
-- No headers, footers, inline objects or positioned objects were returned. No tables appear in the returned body.
-- Page count, actual line wrapping, column flow and font rendering were not verified through a rendered export. A two-page limit is not inferred from formatting metadata.
+- Visible text explicitly uses Raleway. The DOCX Normal style has no font settings; document default size is 10.5 pt. The stored Heading2 style is Calibri, 13 pt, bold, blue (#4F81BD), overridden by the directly formatted visible headings.
+- No tables appear in the source body. Section column layouts are used rather than layout tables.
+- The previous master-3 DOCX rendered to three pages locally; that pagination does not establish the page count of this revised master-4 file. The current education section is full-width and has no blank lines before certification. Page count must be checked in the final editor; do not reduce experience line spacing or alter margins to force a page count.
 - No additional colours, icons, backgrounds or graphics should be inferred from this specification.
 
-## Complete formatting metadata
+## Complete current formatting metadata
 
-The following appendix preserves document defaults, named styles, list definitions, section properties and every paragraph/run formatting record returned by Google Docs. Text snippets identify the element; full résumé prose is intentionally omitted. Unused named styles and list definitions are retained for completeness and should not override the visible formatting above.
-
-An absent property means it was not returned as a direct setting; consult the relevant named style or section inheritance. Empty Google API colour objects are preserved as returned. A populated rgbColor object with no channels represents black.
+This appendix replaces the old Google Docs API snapshot. It preserves the current DOCX section, style, numbering, paragraph and run settings, including unused styles. Only short text previews are retained. Paragraph-mark properties are separate from visible run properties. Missing direct properties require style inheritance; do not treat a paragraph mark as formatting for all visible text.
 
 ```json
 {
-  "documentStyle": {
-    "background": {
-      "color": {}
-    },
-    "pageNumberStart": 1,
-    "marginTop": {
-      "magnitude": 72,
-      "unit": "PT"
-    },
-    "marginBottom": {
-      "magnitude": 72,
-      "unit": "PT"
-    },
-    "marginRight": {
-      "magnitude": 72,
-      "unit": "PT"
-    },
-    "marginLeft": {
-      "magnitude": 72,
-      "unit": "PT"
-    },
-    "pageSize": {
-      "height": {
-        "magnitude": 841.8897637795277,
-        "unit": "PT"
-      },
-      "width": {
-        "magnitude": 595.2755905511812,
-        "unit": "PT"
-      }
-    },
-    "marginHeader": {
-      "magnitude": 36,
-      "unit": "PT"
-    },
-    "marginFooter": {
-      "magnitude": 36,
-      "unit": "PT"
-    },
-    "useCustomHeaderFooterMargins": true,
-    "documentFormat": {
-      "documentMode": "PAGES"
-    }
+  "sourceFilename": "Olena_Machula_CV_master-4.docx",
+  "sourceSHA256": "3e7d8f9b795769d4e738975c4f7e780a0d2a1cd35a4b04abe0b2b71e7e4f24af",
+  "units": {
+    "pageAndIndent": "twips (20 per pt)",
+    "fontSize": "half-points",
+    "automaticLineSpacing": "240ths of a line",
+    "borderSize": "eighth-points"
   },
-  "namedStyles": {
-    "styles": [
-      {
-        "namedStyleType": "NORMAL_TEXT",
-        "textStyle": {
-          "bold": false,
-          "italic": false,
-          "underline": false,
-          "strikethrough": false,
-          "smallCaps": false,
-          "backgroundColor": {},
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {}
-            }
+  "sections": [
+    {
+      "tag": "sectPr",
+      "attributes": {},
+      "children": [
+        {
+          "tag": "pgSz",
+          "attributes": {
+            "h": "16840",
+            "w": "11900",
+            "orient": "portrait"
           },
-          "fontSize": {
-            "magnitude": 10.5,
-            "unit": "PT"
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Times New Roman",
-            "weight": 400
-          },
-          "baselineOffset": "NONE"
+          "children": []
         },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "START",
-          "lineSpacing": 100,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "unit": "PT"
+        {
+          "tag": "pgMar",
+          "attributes": {
+            "bottom": "566.9291338582677",
+            "top": "566.9291338582677",
+            "left": "737.0078740157481",
+            "right": "737.0078740157481",
+            "header": "720",
+            "footer": "720"
           },
-          "spaceBelow": {
-            "unit": "PT"
+          "children": []
+        },
+        {
+          "tag": "pgNumType",
+          "attributes": {
+            "start": "1"
           },
-          "borderBetween": {
-            "color": {},
-            "width": {
-              "unit": "PT"
+          "children": []
+        },
+        {
+          "tag": "cols",
+          "attributes": {
+            "equalWidth": "0",
+            "num": "2"
+          },
+          "children": [
+            {
+              "tag": "col",
+              "attributes": {
+                "space": "1199.55",
+                "w": "4615.96"
+              },
+              "children": []
             },
-            "padding": {
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "borderTop": {
-            "color": {},
-            "width": {
-              "unit": "PT"
-            },
-            "padding": {
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "borderBottom": {
-            "color": {},
-            "width": {
-              "unit": "PT"
-            },
-            "padding": {
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "borderLeft": {
-            "color": {},
-            "width": {
-              "unit": "PT"
-            },
-            "padding": {
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "borderRight": {
-            "color": {},
-            "width": {
-              "unit": "PT"
-            },
-            "padding": {
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "indentFirstLine": {
-            "unit": "PT"
-          },
-          "indentStart": {
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "unit": "PT"
-          },
-          "keepLinesTogether": false,
-          "keepWithNext": false,
-          "avoidWidowAndOrphan": true,
-          "shading": {
-            "backgroundColor": {}
-          },
-          "pageBreakBefore": false
+            {
+              "tag": "col",
+              "attributes": {
+                "space": "0",
+                "w": "4615.96"
+              },
+              "children": []
+            }
+          ]
         }
+      ]
+    },
+    {
+      "tag": "sectPr",
+      "attributes": {},
+      "children": [
+        {
+          "tag": "type",
+          "attributes": {
+            "val": "continuous"
+          },
+          "children": []
+        },
+        {
+          "tag": "pgSz",
+          "attributes": {
+            "h": "16840",
+            "w": "11900",
+            "orient": "portrait"
+          },
+          "children": []
+        },
+        {
+          "tag": "pgMar",
+          "attributes": {
+            "bottom": "566.9291338582677",
+            "top": "566.9291338582677",
+            "left": "737.0078740157481",
+            "right": "737.0078740157481",
+            "header": "720",
+            "footer": "720"
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "tag": "sectPr",
+      "attributes": {},
+      "children": [
+        {
+          "tag": "type",
+          "attributes": {
+            "val": "continuous"
+          },
+          "children": []
+        },
+        {
+          "tag": "pgSz",
+          "attributes": {
+            "h": "16840",
+            "w": "11900",
+            "orient": "portrait"
+          },
+          "children": []
+        },
+        {
+          "tag": "pgMar",
+          "attributes": {
+            "bottom": "566.9291338582677",
+            "top": "566.9291338582677",
+            "left": "737.0078740157481",
+            "right": "737.0078740157481",
+            "header": "720",
+            "footer": "720"
+          },
+          "children": []
+        },
+        {
+          "tag": "cols",
+          "attributes": {
+            "equalWidth": "0",
+            "num": "1"
+          },
+          "children": [
+            {
+              "tag": "col",
+              "attributes": {
+                "space": "0",
+                "w": "10431.48"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "styles": {
+    "tag": "styles",
+    "attributes": {},
+    "children": [
+      {
+        "tag": "docDefaults",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "rPrDefault",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "sz",
+                    "attributes": {
+                      "val": "21"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "szCs",
+                    "attributes": {
+                      "val": "21"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "lang",
+                    "attributes": {
+                      "val": "en"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "pPrDefault",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
+          }
+        ]
       },
       {
-        "namedStyleType": "HEADING_1",
-        "textStyle": {
-          "bold": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.21176471,
-                "green": 0.3764706,
-                "blue": 0.5686275
-              }
-            }
-          },
-          "fontSize": {
-            "magnitude": 14,
-            "unit": "PT"
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
+        "tag": "style",
+        "attributes": {
+          "type": "table",
+          "styleId": "TableNormal",
+          "default": "1"
         },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 24,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "HEADING_2",
-        "textStyle": {
-          "bold": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.30980393,
-                "green": 0.5058824,
-                "blue": 0.7411765
-              }
-            }
-          },
-          "fontSize": {
-            "magnitude": 13,
-            "unit": "PT"
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 10,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "HEADING_3",
-        "textStyle": {
-          "bold": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.30980393,
-                "green": 0.5058824,
-                "blue": 0.7411765
-              }
-            }
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 10,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "HEADING_4",
-        "textStyle": {
-          "bold": true,
-          "italic": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.30980393,
-                "green": 0.5058824,
-                "blue": 0.7411765
-              }
-            }
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 10,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "HEADING_5",
-        "textStyle": {
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.14117648,
-                "green": 0.24705882,
-                "blue": 0.38039216
-              }
-            }
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 10,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "HEADING_6",
-        "textStyle": {
-          "italic": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.14117648,
-                "green": 0.24705882,
-                "blue": 0.38039216
-              }
-            }
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 10,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true,
-          "keepWithNext": true
-        }
-      },
-      {
-        "namedStyleType": "TITLE",
-        "textStyle": {
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.09019608,
-                "green": 0.21176471,
-                "blue": 0.3647059
-              }
-            }
-          },
-          "fontSize": {
-            "magnitude": 26,
-            "unit": "PT"
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
-        },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceBelow": {
-            "magnitude": 15,
-            "unit": "PT"
-          },
-          "borderBottom": {
-            "color": {
-              "color": {
-                "rgbColor": {
-                  "red": 0.30980393,
-                  "green": 0.5058824,
-                  "blue": 0.7411765
-                }
-              }
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "TableNormal"
             },
-            "width": {
-              "magnitude": 1,
-              "unit": "PT"
-            },
-            "padding": {
-              "magnitude": 4,
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
+            "children": []
+          },
+          {
+            "tag": "tblPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "tblCellMar",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "top",
+                    "attributes": {
+                      "w": "100.0",
+                      "type": "dxa"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "left",
+                    "attributes": {
+                      "w": "100.0",
+                      "type": "dxa"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "bottom",
+                    "attributes": {
+                      "w": "100.0",
+                      "type": "dxa"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "right",
+                    "attributes": {
+                      "w": "100.0",
+                      "type": "dxa"
+                    },
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
-        }
+        ]
       },
       {
-        "namedStyleType": "SUBTITLE",
-        "textStyle": {
-          "italic": true,
-          "foregroundColor": {
-            "color": {
-              "rgbColor": {
-                "red": 0.30980393,
-                "green": 0.5058824,
-                "blue": 0.7411765
-              }
-            }
-          },
-          "fontSize": {
-            "magnitude": 12,
-            "unit": "PT"
-          },
-          "weightedFontFamily": {
-            "fontFamily": "Calibri",
-            "weight": 400
-          }
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Normal",
+          "default": "1"
         },
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "direction": "LEFT_TO_RIGHT"
-        }
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "normal"
+            },
+            "children": []
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading1"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 1"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "480",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "366091"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "28"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "28"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading2"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 2"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "200",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "4f81bd"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading3"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 3"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "200",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "4f81bd"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading4"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 4"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "200",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "i",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "iCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "4f81bd"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading5"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 5"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "200",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "243f61"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Heading6"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "heading 6"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "keepNext",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "keepLines",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "before": "200",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "i",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "iCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "243f61"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Title"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "Title"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "pBdr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "bottom",
+                    "attributes": {
+                      "color": "4f81bd",
+                      "space": "4",
+                      "sz": "8",
+                      "val": "single"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "spacing",
+                "attributes": {
+                  "after": "300",
+                  "lineRule": "auto"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "17365d"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "52"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "52"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "Subtitle"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "Subtitle"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "pPr",
+            "attributes": {},
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Calibri",
+                  "cs": "Calibri",
+                  "eastAsia": "Calibri",
+                  "hAnsi": "Calibri"
+                },
+                "children": []
+              },
+              {
+                "tag": "i",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "iCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "4f81bd"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "style",
+        "attributes": {
+          "type": "paragraph",
+          "styleId": "TableofFigures"
+        },
+        "children": [
+          {
+            "tag": "name",
+            "attributes": {
+              "val": "table of figures"
+            },
+            "children": []
+          },
+          {
+            "tag": "basedOn",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          },
+          {
+            "tag": "next",
+            "attributes": {
+              "val": "Normal"
+            },
+            "children": []
+          }
+        ]
       }
     ]
   },
-  "lists": {
-    "kix.list.1": {
-      "listProperties": {
-        "nestingLevels": [
+  "numbering": {
+    "tag": "numbering",
+    "attributes": {},
+    "children": [
+      {
+        "tag": "abstractNum",
+        "attributes": {
+          "abstractNumId": "1"
+        },
+        "children": [
           {
-            "bulletAlignment": "START",
-            "glyphSymbol": "●",
-            "glyphFormat": "%0",
-            "indentFirstLine": {
-              "magnitude": 21.259842519685044,
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "0"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {
-              "weightedFontFamily": {
-                "fontFamily": "Noto Sans Symbols",
-                "weight": 400
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": "●"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "425.19685039370086"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "rFonts",
+                    "attributes": {
+                      "ascii": "Noto Sans Symbols",
+                      "cs": "Noto Sans Symbols",
+                      "eastAsia": "Noto Sans Symbols",
+                      "hAnsi": "Noto Sans Symbols"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            },
-            "startNumber": 1
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "1"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.2": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphSymbol": "●",
-            "glyphFormat": "%0",
-            "indentFirstLine": {
-              "magnitude": 18,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 36,
-              "unit": "PT"
-            },
-            "textStyle": {
-              "weightedFontFamily": {
-                "fontFamily": "Noto Sans Symbols",
-                "weight": 400
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
               }
-            },
-            "startNumber": 1
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "2"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.3": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphSymbol": "●",
-            "glyphFormat": "%0",
-            "indentFirstLine": {
-              "magnitude": 36,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 54,
-              "unit": "PT"
-            },
-            "textStyle": {
-              "weightedFontFamily": {
-                "fontFamily": "Noto Sans Symbols",
-                "weight": 400
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
               }
-            },
-            "startNumber": 1
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "3"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.4": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphSymbol": "●",
-            "glyphFormat": "%0",
-            "indentFirstLine": {
-              "magnitude": 54,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 72,
-              "unit": "PT"
-            },
-            "textStyle": {
-              "weightedFontFamily": {
-                "fontFamily": "Noto Sans Symbols",
-                "weight": 400
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
               }
-            },
-            "startNumber": 1
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "4"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "5"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "6"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "7"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
           },
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "lvl",
+            "attributes": {
+              "ilvl": "8"
             },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
+            "children": [
+              {
+                "tag": "start",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "numFmt",
+                "attributes": {
+                  "val": "bullet"
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlText",
+                "attributes": {
+                  "val": ""
+                },
+                "children": []
+              },
+              {
+                "tag": "lvlJc",
+                "attributes": {
+                  "val": "left"
+                },
+                "children": []
+              },
+              {
+                "tag": "pPr",
+                "attributes": {},
+                "children": [
+                  {
+                    "tag": "ind",
+                    "attributes": {
+                      "left": "0",
+                      "firstLine": "0"
+                    },
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "tag": "rPr",
+                "attributes": {},
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "num",
+        "attributes": {
+          "numId": "1"
+        },
+        "children": [
           {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
+            "tag": "abstractNumId",
+            "attributes": {
+              "val": "1"
             },
-            "indentStart": {              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
+            "children": []
           }
         ]
       }
-    },
-    "kix.list.5": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphType": "DECIMAL",
-            "glyphFormat": "%0.",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 18,
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.6": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphType": "DECIMAL",
-            "glyphFormat": "%0.",
-            "indentFirstLine": {
-              "magnitude": 18,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 36,
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.7": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphType": "DECIMAL",
-            "glyphFormat": "%0.",
-            "indentFirstLine": {
-              "magnitude": 36,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 54,
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.8": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphType": "DECIMAL",
-            "glyphFormat": "%0.",
-            "indentFirstLine": {
-              "magnitude": 54,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 72,
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    },
-    "kix.list.9": {
-      "listProperties": {
-        "nestingLevels": [
-          {
-            "bulletAlignment": "START",
-            "glyphType": "DECIMAL",
-            "glyphFormat": "%0.",
-            "indentFirstLine": {
-              "magnitude": 72,
-              "unit": "PT"
-            },
-            "indentStart": {
-              "magnitude": 90,
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          },
-          {
-            "bulletAlignment": "START",
-            "glyphType": "NONE",
-            "indentFirstLine": {
-              "unit": "PT"
-            },
-            "indentStart": {
-              "unit": "PT"
-            },
-            "textStyle": {},
-            "startNumber": 1
-          }
-        ]
-      }
-    }
+    ]
   },
-  "formattingRecords": [
+  "paragraphs": [
     {
-      "startIndex": 0,
-      "endIndex": 1,
-      "sectionBreak": {
-        "sectionStyle": {
-          "columnProperties": [
-            {
-              "width": {
-                "magnitude": 230.199,
-                "unit": "PT"
-              },
-              "paddingEnd": {
-                "magnitude": 59.9775,
-                "unit": "PT"
-              }
+      "paragraphIndex": 0,
+      "label": "Olena Machula",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
             },
-            {
-              "width": {
-                "magnitude": 230.199,
-                "unit": "PT"
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "0.9999999999999432"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "paddingEnd": {
-                "unit": "PT"
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
               }
-            }
-          ],
-          "columnSeparatorStyle": "NONE",
-          "contentDirection": "LEFT_TO_RIGHT",
-          "marginTop": {
-            "magnitude": 30.95,
-            "unit": "PT"
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Olena Machula",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "40"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "40"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
           },
-          "marginBottom": {
-            "magnitude": 32.4,
-            "unit": "PT"
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
           },
-          "marginRight": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginLeft": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginHeader": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "marginFooter": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "sectionType": "CONTINUOUS"
+          "breaks": []
         }
-      }
+      ]
     },
     {
-      "startIndex": 1,
-      "endIndex": 15,
-      "paragraph": {
-        "label": "Olena Machula",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentEnd": {
-            "magnitude": 0.04999999999999716,
-            "unit": "PT"
-          }
-        },
-        "runs": [
+      "paragraphIndex": 1,
+      "label": "Lead QA | Senior Quality Assurance Engineer",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
           {
-            "startIndex": 1,
-            "endIndex": 14,
-            "textPreview": "Olena Machula",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 20,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
+            "tag": "spacing",
+            "attributes": {
+              "after": "0",
+              "before": "0",
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
           },
           {
-            "startIndex": 14,
-            "endIndex": 15,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+            "tag": "ind",
+            "attributes": {
+              "right": "-216.50000000000006"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "36"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "36"
+                },
+                "children": []
               }
-            }
+            ]
           }
         ]
-      }
-    },
-    {
-      "startIndex": 15,
-      "endIndex": 59,
-      "paragraph": {
-        "label": "Lead QA | Senior Quality Assurance Engineer",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": -10.825000000000003,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 15,
-            "endIndex": 59,
-            "textPreview": "Lead QA | Senior Quality Assurance Engineer\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 18,
-                "unit": "PT"
+      },
+      "runs": [
+        {
+          "textPreview": "Lead QA | Senior Quality Assurance Engineer",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 59,
-      "endIndex": 100,
-      "paragraph": {
-        "label": "+380 99 139 73 67\u000bchagovets.xx@gmail.com",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "END",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 59,
-            "endIndex": 99,
-            "textPreview": "+380 99 139 73 67\u000bchagovets.xx@gmail.com",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "36"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 99,
-            "endIndex": 100,
-            "textPreview": "\n",
-            "textStyle": {
-              "underline": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "36"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
               }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 100,
-      "endIndex": 170,
-      "paragraph": {
-        "label": "linkedin.com/in/olena-machula\u000bRemote | Open to EU / UK opportunities",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "END",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "unit": "PT"
+            ]
           },
-          "spaceBelow": {
-            "unit": "PT"
-          },
-          "indentFirstLine": {
-            "magnitude": 21.259842519685023,
-            "unit": "PT"
-          },
-          "indentStart": {
-            "magnitude": 21.259842519685023,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 100,
-            "endIndex": 170,
-            "textPreview": "linkedin.com/in/olena-machula\u000bRemote | Open to EU / UK opportunities \n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 170,
-      "endIndex": 171,
-      "sectionBreak": {
-        "sectionStyle": {
-          "columnSeparatorStyle": "NONE",
-          "contentDirection": "LEFT_TO_RIGHT",
-          "marginTop": {
-            "magnitude": 30.95,
-            "unit": "PT"
-          },
-          "marginBottom": {
-            "magnitude": 31.972440944881953,
-            "unit": "PT"
-          },
-          "marginRight": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginLeft": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginHeader": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "marginFooter": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "sectionType": "CONTINUOUS",
-          "useFirstPageHeaderFooter": false,
-          "flipPageOrientation": false
+          "breaks": []
         }
-      }
+      ]
     },
     {
-      "startIndex": 171,
-      "endIndex": 709,
-      "paragraph": {
-        "label": "QA Lead with 7+ years of software quality assurance experience and 3 years leading a team ",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 125,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "unit": "PT"
-          }
-        },
-        "runs": [
+      "paragraphIndex": 2,
+      "label": "+380 99 139 73 67chagovets.xx@gmail.com",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
           {
-            "startIndex": 171,
-            "endIndex": 708,
-            "textPreview": "QA Lead with 7+ years of software quality assurance experience and 3 y",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 708,
-            "endIndex": 709,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 709,
-      "endIndex": 716,
-      "paragraph": {
-        "label": "Skills",
-        "paragraphStyle": {
-          "headingId": "h.tfyvcbtlxmfz",
-          "namedStyleType": "HEADING_2",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "borderBottom": {
-            "color": {
-              "color": {
-                "rgbColor": {}
-              }
+            "tag": "spacing",
+            "attributes": {
+              "after": "0",
+              "before": "0",
+              "line": "360",
+              "lineRule": "auto"
             },
-            "width": {
-              "magnitude": 1.5,
-              "unit": "PT"
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
             },
-            "padding": {
-              "magnitude": 4,
-              "unit": "PT"
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "right"
             },
-            "dashStyle": "SOLID"
+            "children": []
           },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          }
-        },
-        "runs": [
           {
-            "startIndex": 709,
-            "endIndex": 716,            "textPreview": "Skills\n",
-            "textStyle": {
-              "bold": false,
-              "foregroundColor": {
-                "color": {
-                  "rgbColor": {}
-                }
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "fontSize": {
-                "magnitude": 15,
-                "unit": "PT"
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "u",
+                "attributes": {
+                  "val": "single"
+                },
+                "children": []
               }
-            }
+            ]
           }
         ]
-      }
-    },
-    {
-      "startIndex": 716,
-      "endIndex": 933,
-      "paragraph": {
-        "label": "QA Leadership & Strategy: QA Leadership, QA Strategy, Test Strategy, Quality Management, T",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 716,
-            "endIndex": 741,
-            "textPreview": "QA Leadership & Strategy:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+      },
+      "runs": [
+        {
+          "textPreview": "+380 99 139 73 67chagovets.xx@gmail.com",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 741,
-            "endIndex": 933,
-            "textPreview": " QA Leadership, QA Strategy, Test Strategy, Quality Management, Test P",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 933,
-      "endIndex": 1122,
-      "paragraph": {
-        "label": "Release & Quality Ownership: Release Management, Release Validation, Release Readiness, Qu",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 933,
-            "endIndex": 961,
-            "textPreview": "Release & Quality Ownership:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
               }
-            }
+            ]
           },
-          {
-            "startIndex": 961,
-            "endIndex": 1122,
-            "textPreview": " Release Management, Release Validation, Release Readiness, Quality Ga",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1122,
-      "endIndex": 1294,
-      "paragraph": {
-        "label": "Test Management & Analysis: Requirements Analysis, Test Design, Test Coverage Analysis, Te",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1122,
-            "endIndex": 1149,
-            "textPreview": "Test Management & Analysis:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1149,
-            "endIndex": 1294,
-            "textPreview": " Requirements Analysis, Test Design, Test Coverage Analysis, Test Case",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1294,
-      "endIndex": 1445,
-      "paragraph": {
-        "label": "API & Backend: REST API Testing, API Integration Testing, HTTP/HTTPS, Postman, Swagger/Ope",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1294,
-            "endIndex": 1308,
-            "textPreview": "API & Backend:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1308,
-            "endIndex": 1445,
-            "textPreview": " REST API Testing, API Integration Testing, HTTP/HTTPS, Postman, Swagg",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1445,
-      "endIndex": 1612,
-      "paragraph": {
-        "label": "Automation & Quality Engineering: Quality Engineering, Test Automation Strategy, Automatio",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1445,
-            "endIndex": 1478,
-            "textPreview": "Automation & Quality Engineering:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1478,
-            "endIndex": 1612,
-            "textPreview": " Quality Engineering, Test Automation Strategy, Automation Coverage Pl",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1612,
-      "endIndex": 1820,
-      "paragraph": {
-        "label": "Leadership & Collaboration: QA Team Leadership, Mentoring, Cross-functional Collaboration,",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spacingMode": "NEVER_COLLAPSE",
-          "spaceAbove": {
-            "magnitude": 6,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 6,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1612,
-            "endIndex": 1639,
-            "textPreview": "Leadership & Collaboration:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1639,
-            "endIndex": 1820,
-            "textPreview": " QA Team Leadership, Mentoring, Cross-functional Collaboration, Stakeh",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1820,
-      "endIndex": 1831,
-      "paragraph": {
-        "label": "Experience",
-        "paragraphStyle": {
-          "headingId": "h.nhzx5a2zte71",
-          "namedStyleType": "HEADING_2",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "borderBottom": {
-            "color": {
-              "color": {
-                "rgbColor": {}
-              }
-            },
-            "width": {
-              "magnitude": 1.5,
-              "unit": "PT"
-            },
-            "padding": {
-              "magnitude": 4,
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1820,
-            "endIndex": 1831,
-            "textPreview": "Experience\n",
-            "textStyle": {
-              "bold": false,
-              "foregroundColor": {
-                "color": {
-                  "rgbColor": {}
-                }
-              },
-              "fontSize": {
-                "magnitude": 15,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1831,
-      "endIndex": 1926,
-      "paragraph": {
-        "label": "QA Lead / Senior Quality Assurance Engineer | Möbel Pfister AG\u000bApril 2023 – July 2026 | Re",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 4,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 2,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepWithNext": true
-        },
-        "runs": [
-          {
-            "startIndex": 1831,
-            "endIndex": 1893,
-            "textPreview": "QA Lead / Senior Quality Assurance Engineer | Möbel Pfister AG",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 13,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1893,
-            "endIndex": 1925,
-            "textPreview": "\u000bApril 2023 – July 2026 | Remote",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 1925,
-            "endIndex": 1926,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 1926,
-      "endIndex": 2150,
-      "paragraph": {
-        "label": "Led quality delivery across 2 interconnected systems and 4–5 production releases per month",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 1926,
-            "endIndex": 2150,
-            "textPreview": "Led quality delivery across 2 interconnected systems and 4–5 productio",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 2150,
-      "endIndex": 2281,
-      "paragraph": {
-        "label": "Managed and developed a 5-person QA team through goal setting, 1:1s, performance reviews, ",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 2150,
-            "endIndex": 2281,
-            "textPreview": "Managed and developed a 5-person QA team through goal setting, 1:1s, p",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 2281,
-      "endIndex": 2477,
-      "paragraph": {
-        "label": "Reduced late discovery of quality risks by applying shift-left testing during requirements",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 2281,
-            "endIndex": 2477,
-            "textPreview": "Reduced late discovery of quality risks by applying shift-left testing",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 2477,
-      "endIndex": 2744,
-      "paragraph": {
-        "label": "Increased automated regression protection for business-critical web functionality by devel",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 2477,
-            "endIndex": 2744,
-            "textPreview": "Increased automated regression protection for business-critical web fu",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 2744,
-      "endIndex": 2941,
-      "paragraph": {
-        "label": "Protected business-critical workflows across payment integrations, REST APIs, asynchronous",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 2744,
-            "endIndex": 2941,
-            "textPreview": "Protected business-critical workflows across payment integrations, RES",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 2941,
-      "endIndex": 3134,
-      "paragraph": {
-        "label": "Increased automated regression protection for business-critical functionality by defining ",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 2941,
-            "endIndex": 3134,
-            "textPreview": "Increased automated regression protection for business-critical functi",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 3134,
-      "endIndex": 3363,
-      "paragraph": {
-        "label": "Improved QA workflows across requirement analysis, test case design, and bug reporting by ",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 3134,
-            "endIndex": 3363,
-            "textPreview": "Improved QA workflows across requirement analysis, test case design, a",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 3363,
-      "endIndex": 3447,
-      "paragraph": {
-        "label": "Quality Assurance Engineer | MobiDev\u000bSeptember 2021 – March 2023 | Kharkiv, Ukraine",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 7,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 2,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepWithNext": true
-        },
-        "runs": [
-          {
-            "startIndex": 3363,
-            "endIndex": 3399,
-            "textPreview": "Quality Assurance Engineer | MobiDev",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 13,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 3399,
-            "endIndex": 3446,
-            "textPreview": "\u000bSeptember 2021 – March 2023 | Kharkiv, Ukraine",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 3446,
-            "endIndex": 3447,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 3447,
-      "endIndex": 3634,
-      "paragraph": {
-        "label": "Improved early defect detection by applying shift-left testing during requirements analysi",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 3447,
-            "endIndex": 3634,
-            "textPreview": "Improved early defect detection by applying shift-left testing during ",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 3634,
-      "endIndex": 3850,
-      "paragraph": {
-        "label": "Increased confidence in data consistency across 2 interconnected systems by testing cross-",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 3634,
-            "endIndex": 3850,
-            "textPreview": "Increased confidence in data consistency across 2 interconnected syste",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 3850,
-      "endIndex": 4030,
-      "paragraph": {
-        "label": "Strengthened integration coverage by validating positive, negative, duplicate, delayed, an",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 3850,
-            "endIndex": 4030,
-            "textPreview": "Strengthened integration coverage by validating positive, negative, du",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4030,
-      "endIndex": 4227,
-      "paragraph": {
-        "label": "Improved product quality across web, Android, and iOS applications by executing functional",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 4030,
-            "endIndex": 4227,
-            "textPreview": "Improved product quality across web, Android, and iOS applications by ",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4227,
-      "endIndex": 4441,
-      "paragraph": {
-        "label": "Reduced investigation time for critical defects by analysing API behaviour, browser DevToo",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 4227,
-            "endIndex": 4440,
-            "textPreview": "Reduced investigation time for critical defects by analysing API behav",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 4440,
-            "endIndex": 4441,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4441,
-      "endIndex": 4537,
-      "paragraph": {
-        "label": "Quality Assurance Engineer | NearShorePartner.ch\u000bFebruary 2019 – August 2021 | Kharkiv, Uk",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 7,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 2,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepWithNext": true
-        },
-        "runs": [
-          {
-            "startIndex": 4441,
-            "endIndex": 4442,
-            "textPreview": "Q",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 4442,
-            "endIndex": 4470,
-            "textPreview": "uality Assurance Engineer | ",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 13,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 4470,
-            "endIndex": 4490,
-            "textPreview": "NearShorePartner.ch\u000b",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 13,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 4490,
-            "endIndex": 4537,
-            "textPreview": "February 2019 – August 2021 | Kharkiv, Ukraine\n",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4537,
-      "endIndex": 4711,
-      "paragraph": {
-        "label": "Improved product quality across web and mobile applications by executing functional, non-f",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 10,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 4537,
-            "endIndex": 4711,
-            "textPreview": "Improved product quality across web and mobile applications by executi",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4711,
-      "endIndex": 4910,
-      "paragraph": {
-        "label": "Strengthened API and system integration coverage by testing REST services with Postman and",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 10,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 4711,
-            "endIndex": 4910,
-            "textPreview": "Strengthened API and system integration coverage by testing REST servi",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 4910,
-      "endIndex": 5058,
-      "paragraph": {
-        "label": "Improved test coverage and regression consistency by creating, executing, and maintaining ",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "alignment": "JUSTIFIED",
-          "lineSpacing": 150,
-          "direction": "LEFT_TO_RIGHT",
-          "indentFirstLine": {
-            "magnitude": 21.259842519685044,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepLinesTogether": true
-        },
-        "bullet": {
-          "listId": "kix.list.1",
-          "textStyle": {
-            "fontSize": {
-              "magnitude": 11,
-              "unit": "PT"
-            },
-            "weightedFontFamily": {
-              "fontFamily": "Raleway",
-              "weight": 400
-            }
-          }
-        },
-        "runs": [
-          {
-            "startIndex": 4910,
-            "endIndex": 5057,
-            "textPreview": "Improved test coverage and regression consistency by creating, executi",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 5057,
-            "endIndex": 5058,
-            "textPreview": "\n",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 5058,
-      "endIndex": 5068,
-      "paragraph": {
-        "label": "Education",
-        "paragraphStyle": {
-          "headingId": "h.109wuwsl7nok",
-          "namedStyleType": "HEADING_2",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceAbove": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "spaceBelow": {
-            "magnitude": 8,
-            "unit": "PT"
-          },
-          "borderBottom": {
-            "color": {
-              "color": {
-                "rgbColor": {}
-              }
-            },
-            "width": {
-              "magnitude": 1.5,
-              "unit": "PT"
-            },
-            "padding": {
-              "magnitude": 4,
-              "unit": "PT"
-            },
-            "dashStyle": "SOLID"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          },
-          "keepWithNext": true
-        },
-        "runs": [
-          {
-            "startIndex": 5058,
-            "endIndex": 5067,
-            "textPreview": "Education",
-            "textStyle": {
-              "bold": false,
-              "foregroundColor": {
-                "color": {
-                  "rgbColor": {}
-                }
-              },
-              "fontSize": {
-                "magnitude": 16,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 5067,
-            "endIndex": 5068,
-            "textPreview": "\n",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
-      "startIndex": 5068,
-      "endIndex": 5069,
-      "sectionBreak": {
-        "sectionStyle": {
-          "columnProperties": [
+          "breaks": [
             {
-              "width": {
-                "magnitude": 242.187,
-                "unit": "PT"
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
               },
-              "paddingEnd": {
-                "magnitude": 36,
-                "unit": "PT"
-              }
-            },
-            {
-              "width": {
-                "magnitude": 242.187,
-                "unit": "PT"
-              },
-              "paddingEnd": {
-                "unit": "PT"
-              }
+              "children": []
             }
-          ],
-          "columnSeparatorStyle": "NONE",
-          "contentDirection": "LEFT_TO_RIGHT",
-          "marginTop": {
-            "magnitude": 30.95,
-            "unit": "PT"
+          ]
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
           },
-          "marginBottom": {
-            "magnitude": 31.972440944881953,
-            "unit": "PT"
-          },
-          "marginRight": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginLeft": {
-            "magnitude": 37.45,
-            "unit": "PT"
-          },
-          "marginHeader": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "marginFooter": {
-            "magnitude": 36,
-            "unit": "PT"
-          },
-          "sectionType": "CONTINUOUS",
-          "flipPageOrientation": false
+          "breaks": []
         }
-      }
+      ]
     },
     {
-      "startIndex": 5069,
-      "endIndex": 5334,
-      "paragraph": {
-        "label": "Kharkiv National University of Radioelectronics\u000bMSc, Software Engineering — 2020\u000bBSc, Soft",
-        "paragraphStyle": {
-          "namedStyleType": "NORMAL_TEXT",
-          "lineSpacing": 115,
-          "direction": "LEFT_TO_RIGHT",
-          "spaceBelow": {
-            "magnitude": 12,
-            "unit": "PT"
-          },
-          "indentEnd": {
-            "magnitude": 2.7,
-            "unit": "PT"
-          }
-        },
-        "runs": [
+      "paragraphIndex": 3,
+      "label": "linkedin.com/in/olena-machulaRemote | Open to EU / UK opportunities ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
           {
-            "startIndex": 5069,
-            "endIndex": 5117,
-            "textPreview": "Kharkiv National University of Radioelectronics\u000b",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
+            "tag": "spacing",
+            "attributes": {
+              "after": "0",
+              "before": "0",
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
           },
           {
-            "startIndex": 5117,
-            "endIndex": 5182,
-            "textPreview": "MSc, Software Engineering — 2020\u000bBSc, Software Engineering — 2018",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 12,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
+            "tag": "ind",
+            "attributes": {
+              "left": "425.19685039370046",
+              "right": "54",
+              "firstLine": "0"
+            },
+            "children": []
           },
           {
-            "startIndex": 5182,
-            "endIndex": 5198,
-            "textPreview": "\u000b\u000bCertification:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
+            "tag": "jc",
+            "attributes": {
+              "val": "right"
+            },
+            "children": []
           },
           {
-            "startIndex": 5198,
-            "endIndex": 5252,
-            "textPreview": " ISTQB Certified Tester Foundation Level (CTFL), 2020\u000b",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
               }
-            }
+            ]
           },
           {
-            "startIndex": 5252,
-            "endIndex": 5260,
-            "textPreview": "Domains:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+            "tag": "sectPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "pgSz",
+                "attributes": {
+                  "h": "16840",
+                  "w": "11900",
+                  "orient": "portrait"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 5260,
-            "endIndex": 5290,
-            "textPreview": " E-commerce, SaaS, Healthcare\u000b",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "pgMar",
+                "attributes": {
+                  "bottom": "566.9291338582677",
+                  "top": "566.9291338582677",
+                  "left": "737.0078740157481",
+                  "right": "737.0078740157481",
+                  "header": "720",
+                  "footer": "720"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 5290,
-            "endIndex": 5300,
-            "textPreview": "Languages:",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
+              {
+                "tag": "pgNumType",
+                "attributes": {
+                  "start": "1"
+                },
+                "children": []
               },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
+              {
+                "tag": "cols",
+                "attributes": {
+                  "equalWidth": "0",
+                  "num": "2"
+                },
+                "children": [
+                  {
+                    "tag": "col",
+                    "attributes": {
+                      "space": "1199.55",
+                      "w": "4615.96"
+                    },
+                    "children": []
+                  },
+                  {
+                    "tag": "col",
+                    "attributes": {
+                      "space": "0",
+                      "w": "4615.96"
+                    },
+                    "children": []
+                  }
+                ]
               }
-            }
-          },
-          {
-            "startIndex": 5300,
-            "endIndex": 5333,
-            "textPreview": " English (C1), Ukrainian (Native)",
-            "textStyle": {
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
-          },
-          {
-            "startIndex": 5333,
-            "endIndex": 5334,
-            "textPreview": "\n",
-            "textStyle": {
-              "bold": true,
-              "fontSize": {
-                "magnitude": 11,
-                "unit": "PT"
-              },
-              "weightedFontFamily": {
-                "fontFamily": "Raleway",
-                "weight": 400
-              }
-            }
+            ]
           }
         ]
-      }
+      },
+      "runs": [
+        {
+          "textPreview": "linkedin.com/in/olena-machulaRemote | Open to EU / UK opportunities ",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 4,
+      "label": "QA Lead with 7+ years of software quality assurance experience and 3 years leading a team ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "0",
+              "before": "0",
+              "line": "300",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "QA Lead with 7+ years of software quality assurance experience and 3 y",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 5,
+      "label": "Skills",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "pStyle",
+            "attributes": {
+              "val": "Heading2"
+            },
+            "children": []
+          },
+          {
+            "tag": "pBdr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "bottom",
+                "attributes": {
+                  "color": "000000",
+                  "space": "4",
+                  "sz": "12",
+                  "val": "single"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "160",
+              "before": "160",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "000000"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Skills",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "000000"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 6,
+      "label": "QA Leadership & Strategy: QA Leadership, QA Strategy, Test Strategy, Quality Management, T",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "QA Leadership & Strategy:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " QA Leadership, QA Strategy, Test Strategy, Quality Management, Test P",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 7,
+      "label": "Release & Quality Ownership: Release Management, Release Validation, Release Readiness, Qu",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Release & Quality Ownership:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " Release Management, Release Validation, Release Readiness, Quality Ga",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 8,
+      "label": "Test Management & Analysis: Requirements Analysis, Test Design, Test Coverage Analysis, Te",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Test Management & Analysis:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " Requirements Analysis, Test Design, Test Coverage Analysis, Test Case",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 9,
+      "label": "API & Backend: REST API Testing, API Integration Testing, HTTP/HTTPS, Postman, Swagger/Ope",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "API & Backend:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " REST API Testing, API Integration Testing, HTTP/HTTPS, Postman, Swagg",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 10,
+      "label": "Automation & Quality Engineering: Quality Engineering, Test Automation Strategy, Automatio",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Automation & Quality Engineering:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " Quality Engineering, Test Automation Strategy, Automation Coverage Pl",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 11,
+      "label": "Leadership & Collaboration: QA Team Leadership, Mentoring, Cross-functional Collaboration,",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "120",
+              "before": "120",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Leadership & Collaboration:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " QA Team Leadership, Mentoring, Cross-functional Collaboration, Stakeh",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 12,
+      "label": "Experience",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "pStyle",
+            "attributes": {
+              "val": "Heading2"
+            },
+            "children": []
+          },
+          {
+            "tag": "pBdr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "bottom",
+                "attributes": {
+                  "color": "000000",
+                  "space": "4",
+                  "sz": "12",
+                  "val": "single"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "160",
+              "before": "160",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "000000"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Experience",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "000000"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "30"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 13,
+      "label": "QA Lead / Senior Quality Assurance Engineer | Möbel Pfister AGApril 2023 – July 2026 | Rem",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepNext",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "40",
+              "before": "80",
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "QA Lead / Senior Quality Assurance Engineer | Möbel Pfister AG",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "April 2023 – July 2026 | Remote",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 14,
+      "label": "Led quality delivery across 2 interconnected systems and 4–5 production releases per month",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Led quality delivery across 2 interconnected systems and 4–5 productio",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 15,
+      "label": "Managed and developed a 5-person QA team through goal setting, 1:1s, performance reviews, ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Managed and developed a 5-person QA team through goal setting, 1:1s, p",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 16,
+      "label": "Reduced late discovery of quality risks by applying shift-left testing during requirements",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Reduced late discovery of quality risks by applying shift-left testing",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 17,
+      "label": "Increased automated regression protection for business-critical web functionality by devel",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Increased automated regression protection for business-critical web fu",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 18,
+      "label": "Protected business-critical workflows across payment integrations, REST APIs, asynchronous",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Protected business-critical workflows across payment integrations, RES",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 19,
+      "label": "Increased automated regression protection for business-critical functionality by defining ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Increased automated regression protection for business-critical functi",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 20,
+      "label": "Improved QA workflows across requirement analysis, test case design, and bug reporting by ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Improved QA workflows across requirement analysis, test case design, a",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 21,
+      "label": "Quality Assurance Engineer | MobiDevSeptember 2021 – March 2023 | Kharkiv, Ukraine",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepNext",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "40",
+              "before": "140",
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Quality Assurance Engineer | MobiDev",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "September 2021 – March 2023 | Kharkiv, Ukraine",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 22,
+      "label": "Improved early defect detection by applying shift-left testing during requirements analysi",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Improved early defect detection by applying shift-left testing during ",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 23,
+      "label": "Increased confidence in data consistency across 2 interconnected systems by testing cross-",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Increased confidence in data consistency across 2 interconnected syste",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 24,
+      "label": "Strengthened integration coverage by validating positive, negative, duplicate, delayed, an",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Strengthened integration coverage by validating positive, negative, du",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 25,
+      "label": "Improved product quality across web, Android, and iOS applications by executing functional",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Improved product quality across web, Android, and iOS applications by ",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 26,
+      "label": "Reduced investigation time for critical defects by analysing API behaviour, browser DevToo",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Reduced investigation time for critical defects by analysing API behav",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 27,
+      "label": "Quality Assurance Engineer | NearShorePartner.chFebruary 2019 – August 2021 | Kharkiv, Ukr",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepNext",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "40",
+              "before": "140",
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Q",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "uality Assurance Engineer | ",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "NearShorePartner.ch",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "26"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "February 2019 – August 2021 | Kharkiv, Ukraine",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 28,
+      "label": "Improved product quality across web and mobile applications by executing functional, non-f",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "20"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "20"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Improved product quality across web and mobile applications by executi",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 29,
+      "label": "Strengthened API and system integration coverage by testing REST services with Postman and",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "20"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "20"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Strengthened API and system integration coverage by testing REST servi",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 30,
+      "label": "Improved test coverage and regression consistency by creating, executing, and maintaining ",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "keepLines",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "numPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "ilvl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "numId",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "line": "360",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54",
+              "firstLine": "425.19685039370086"
+            },
+            "children": []
+          },
+          {
+            "tag": "jc",
+            "attributes": {
+              "val": "both"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Improved test coverage and regression consistency by creating, executi",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 31,
+      "label": "Education",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "pStyle",
+            "attributes": {
+              "val": "Heading2"
+            },
+            "children": []
+          },
+          {
+            "tag": "keepNext",
+            "attributes": {
+              "val": "1"
+            },
+            "children": []
+          },
+          {
+            "tag": "pBdr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "bottom",
+                "attributes": {
+                  "color": "000000",
+                  "space": "4",
+                  "sz": "12",
+                  "val": "single"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "160",
+              "before": "160",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              }
+            ]
+          },
+          {
+            "tag": "sectPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "type",
+                "attributes": {
+                  "val": "continuous"
+                },
+                "children": []
+              },
+              {
+                "tag": "pgSz",
+                "attributes": {
+                  "h": "16840",
+                  "w": "11900",
+                  "orient": "portrait"
+                },
+                "children": []
+              },
+              {
+                "tag": "pgMar",
+                "attributes": {
+                  "bottom": "566.9291338582677",
+                  "top": "566.9291338582677",
+                  "left": "737.0078740157481",
+                  "right": "737.0078740157481",
+                  "header": "720",
+                  "footer": "720"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Education",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              },
+              {
+                "tag": "color",
+                "attributes": {
+                  "val": "000000"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "32"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "32"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
+    },
+    {
+      "paragraphIndex": 32,
+      "label": "Kharkiv National University of RadioelectronicsMSc, Software Engineering — 2020BSc, Softwa",
+      "paragraphProperties": {
+        "tag": "pPr",
+        "attributes": {},
+        "children": [
+          {
+            "tag": "spacing",
+            "attributes": {
+              "after": "240",
+              "line": "276",
+              "lineRule": "auto"
+            },
+            "children": []
+          },
+          {
+            "tag": "ind",
+            "attributes": {
+              "right": "54"
+            },
+            "children": []
+          },
+          {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      "runs": [
+        {
+          "textPreview": "Kharkiv National University of Radioelectronics",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "MSc, Software Engineering — 2020BSc, Software Engineering — 2018",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "24"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "Certification:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": " ISTQB Certified Tester Foundation Level (CTFL), 2020",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "Domains:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " E-commerce, SaaS, Healthcare",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": [
+            {
+              "tag": "br",
+              "attributes": {
+                "type": "textWrapping"
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "textPreview": "Languages:",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "b",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "bCs",
+                "attributes": {
+                  "val": "1"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": " English (C1), Ukrainian (Native)",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rFonts",
+                "attributes": {
+                  "ascii": "Raleway",
+                  "cs": "Raleway",
+                  "eastAsia": "Raleway",
+                  "hAnsi": "Raleway"
+                },
+                "children": []
+              },
+              {
+                "tag": "sz",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "szCs",
+                "attributes": {
+                  "val": "22"
+                },
+                "children": []
+              },
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        },
+        {
+          "textPreview": "",
+          "properties": {
+            "tag": "rPr",
+            "attributes": {},
+            "children": [
+              {
+                "tag": "rtl",
+                "attributes": {
+                  "val": "0"
+                },
+                "children": []
+              }
+            ]
+          },
+          "breaks": []
+        }
+      ]
     }
   ]
 }
