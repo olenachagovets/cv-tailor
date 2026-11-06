@@ -1,5 +1,7 @@
 # CV Formatting Style Guide
 
+**Version 2**
+
 Source: [Olena_Machula_CV_master](https://docs.google.com/document/d/130PuP8feSfTM03H6zOb8s6N2o5O8MyFvSJ9rkOkpzvg/edit)  
 Updated: 5 November 2026  
 Authoritative formatting source for this revision: attached `Olena_Machula_CV_master-4.docx`; this supersedes the earlier Google Docs extraction.  
